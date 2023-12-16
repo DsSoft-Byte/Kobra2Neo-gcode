@@ -44,12 +44,19 @@ M117 ; Display message
 # END-gcode
 
 M104 S0 ; Turn off extruder
+
 M140 S0 ; Turn off heatbed
+
 M107 ; Turn off fan
+
 G91 ; Relative positioning
+
 G1 E-5 F3000 ; Retract filament a little bit
+
 G1 Z+0.3 F3000 ; Lift print head
+
 G28 X0 ; Home X-axis
+
 M84 ; Disable stepper motors
 
 # Hope this helps with the nozzle soiling itself at startup!
